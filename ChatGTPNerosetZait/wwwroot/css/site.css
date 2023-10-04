@@ -1,0 +1,200 @@
+html {
+   max-width:1250px;
+    max-height: 520px;
+    min-height:400px;
+}
+
+.HeaderFull {
+    color: #1D1E33;
+    background-color: #9400D3;
+    font-size: 20px;
+}
+.HeaderMain {
+    display: inline;
+    text-align: center;
+}
+
+.ColumHeader {
+    padding-left: 25px;
+    display: inline;
+}
+.ColumHeader:nth-child(1) {
+    font-size:26px;
+        padding-left: 0px;
+}
+.OlHeader {
+    display: inline-block;
+    
+    margin-left: 50px;
+    padding: 0;
+}
+.RegDiv {
+   margin-left:650px;
+    display: inline-block;
+}
+.Main {
+    background-color: #4B0082;
+    display: flex;
+}
+.Footer {
+    background-color: #4B0082;
+}
+.MainBorder_mainNewMessage {
+    padding-right: 10px;
+    border-right: solid;
+    border-color: #231A24;
+    min-width: 15%;
+}
+.MainNewMessage {
+    min-height: 100%;
+    
+    margin: 10px 0px 20px 20px;
+}
+.Main {
+    min-width: 100%;
+    min-height: 100%;
+    
+}
+.MainMessage {
+    width:1070px;
+    width: 90%;
+    text-align: center;
+}
+.MessageBot {
+
+    display: flex;
+    height:90%;
+}
+
+CSS
+.section::-webkit-scrollbar-thumb {
+    border: 5px solid transparent;
+    border-radius: 100px;
+    background-color: #8070d4;
+    background-clip: content-box;
+}
+
+
+.MessageBotText {
+    padding: 50px 50px 0px 100px;
+    margin-left: 120px;
+    overflow-y: auto;
+    direction: ltr;
+    height: 400px;
+}
+.MessageYou {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+.AHref {
+    color: #1D1E33;
+    text-decoration: none;
+}
+.AHref:hover {
+        color: #32127A;
+    }
+.SendMessage {
+    margin: 10px 0px 20px 0px;
+}
+.MainNewMessage_ButtonChats {
+    border: none;
+    background-color: #8A1DDD;
+    border-radius: 5px 0px 0px 5px;
+}
+.MainNewMessage_ButtonChats_Full {
+    margin: 0px 0px 20px 0px;
+}
+.ImageMusr {
+    width: 10px;
+    height: 15px;
+   
+}
+.ImageButtonMusr {
+    box-shadow:0;
+    background-color: #8A1DDD;
+    border-radius: 0px 5px 5px 0px;
+}
+.MainNewMessage_ButtonChats_One {
+    display: flex;
+   
+}
+.MessageBotGpt {
+    max-width: 450px;
+    min-height: 50px;
+    background-color: #696969;
+    border-radius: 15px 0px;
+    padding: 6px;
+    margin-right: 70px;
+    margin-bottom: 15px;
+    justify-content: center;
+    opacity: .7;
+}
+.MessageClient {
+    opacity: .7;
+    justify-content: center;
+    margin-left: 70px;
+    max-width: 450px;
+    min-height: 50px;
+    background-color: #922B3E;
+    border-radius: 0 15px;
+    margin-bottom: 15px;
+    padding: 6px;
+}
+.Texth1Cgpt {
+    color: #F7F3E9;
+    font-size: 15px;
+    
+}
+.Texth2Cgpt {
+    color: #F7F3E9;
+    font-size: 12px;
+}
+.TextCgpt {
+    text-align: center;
+    color: #F7F3E9;
+}
+.Text{
+    margin-top:50px;
+    margin-left:10%;
+    margin-right:10%;
+}
+.MainBorder_mainNewMessage_Text {
+    padding-right: 10px;
+    border-right: solid;
+    border-color: #231A24;
+    min-width:450px;
+}
+.DivFormMail{
+    margin-top: 120px;
+    margin-left: 20%;
+    margin-right: 20%;
+    width:850px;
+    height:250px;
+}
+.FormMail {
+    width: 350px;
+    border: solid;
+    height: 150px;
+    padding: 50px 50px 50px 50px;
+    border-radius: 10px;
+    background-color: #FD8735;
+}
+.TetxtForm{
+    width:350px;
+}
+.TextMeail {
+    color: #F7F3E9;
+    font-size: 25px;
+}
+.inputMail{
+    margin-top:15px;
+    margin-left:78px;
+}
+.H1TextMail {
+    color: #F7F3E9;
+    text-align: initial;
+    font-size: 23px;
+}
+

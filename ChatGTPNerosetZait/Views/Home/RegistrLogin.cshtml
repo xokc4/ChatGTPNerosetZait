@@ -1,0 +1,59 @@
+﻿@page
+@model ChatGTPNerosetZait.Views.Home.RegistrLoginModel
+@{
+    <html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta />
+        <title>Чат gpt 4, простое общение</title>
+        <link rel="stylesheet" type="text/css" href="/css/site.css"> <!-- Подключаем внешнюю таблицу стилей -->
+        <script src="~/js/site.js">
+
+        </script> <!-- Подключаем сценарии -->
+    </head>
+    <body>
+        <header class="HeaderFull">
+            <div class="HeaderMain">
+                <ol class="OlHeader">
+                    <li class="ColumHeader">
+                        <a class="AHref" href="@Url.Content("~/Home/Index")">Главная страница</a>
+                    </li>
+                    <li class="ColumHeader">
+                        <a class="AHref" href="@Url.Content("~/Home/ChatGpt")">о чате gpt </a>
+                    </li>
+                </ol>
+                <div class="RegDiv">
+                <p>
+                Регистрация  / Войти
+                </p>
+                </div>
+            </div>
+        </header>
+        <main class="Main">
+            <div class="MainBorder_mainNewMessage">     
+            </div>
+            <div class="DivFormMail">
+            
+            <form class="FormMail" method="post">
+            <div class="TetxtForm">
+                <div class="H1TextMail">
+                Напишите свою почту чтобы отправили вам историю сообщений
+                </div>
+                <div>
+                <label class="TextMeail">Почта: 
+                </label>
+                        <input name="MailUser"/>
+                </div>
+                <div>
+                        <input class="inputMail" type="submit" value="Отправить" />
+                </div>
+                    </div>
+            </form>
+            </div>
+        </main>
+        <footer class="Footer">
+        </footer>
+    </body>
+    </html>
+}

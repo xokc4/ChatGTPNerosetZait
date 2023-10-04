@@ -1,0 +1,57 @@
+﻿@page
+@model ChatGTPNerosetZait.Views.Home.ChatGPTModel
+@{
+    <html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta />
+        <title>Чат gpt 4, простое общение</title>
+        <link rel="stylesheet" type="text/css" href="/css/site.css"> <!-- Подключаем внешнюю таблицу стилей -->
+        <script src="~/js/site.js">
+
+        </script> <!-- Подключаем сценарии -->
+    </head>
+    <body>
+        <header class="HeaderFull">
+            <div class="HeaderMain">
+                <ol class="OlHeader">
+                    <li class="ColumHeader">
+                        <a class="AHref" href="@Url.Content("~/Home/Index")">Главная страница </a>
+                    </li>
+                    <li class="ColumHeader">
+                       о чате gpt
+                    </li>
+                </ol>
+                <div class="RegDiv"><p><a class="AHref" href="/Home/RegistrLogin">Регистрация  / Войти</a></p></div>
+            </div>
+        </header>
+        <main class="Main">
+            <div class="MainBorder_mainNewMessage_Text">
+              <div Class="Texth1Cgpt">
+                    <h1>Закрытый ИИ от OpenAI: исследуем нейросеть GPT-4</h1>
+              </div>
+                <div Class="Texth2Cgpt">
+                    <h2>Подробный гайд по таинственной нейросети GPT-4 и секретам её недюжинного интеллекта.</h2>
+              </div>
+            </div>
+            <div Class="TextCgpt">
+                <div Class="text">
+                        ChatGPT (от англ. generative pre-trained Transformer «генеративный предварительно обученный трансформер»)
+                    — Чат-бот с искусственным интеллектом, разработанный компанией OpenAI и способный работать в диалоговом режиме, поддерживающий запросы на естественных языках.
+                </div>
+                <div Class="text">
+                        ChatGPT — большая Языковая модель, для тренировки которой использовались методы обучения с учителем и обучения с подкреплением.
+                    Данный чат-бот основывается на другой языковой модели от OpenAI — GPT-3.5 — улучшенной версии модели GPT-3.
+                </div>
+                <div Class="text">
+                        В отличие от большинства чат-ботов, ChatGPT отслеживает состояние пользователя, запоминая предыдущие вопросы и ответы, данные ему в том же разговоре, что, по мнению некоторых журналистов, позволит использовать ChatGPT в качестве персонализированного терапевта. 
+                    В попытке предотвратить выдачу оскорбительных результатов от запросов пользователей и получение оскорбительных ответов, в ChatGPT запросы фильтруются через API модерации, а потенциально расистские или сексистские подсказки отклоняются.
+                </div>
+            </div>
+        </main>
+        <footer class="Footer">
+        </footer>
+    </body>
+    </html>
+}

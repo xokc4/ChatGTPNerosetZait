@@ -1,0 +1,78 @@
+﻿
+@using ChatGTPNerosetZait
+@model List<Message>
+
+
+<html>
+<head>
+  
+    <meta charset="UTF-8"> <meta />
+    <title>Чат gpt 4, простое общение</title>
+    <link rel="stylesheet" type="text/css" href="/css/site.css"> <!-- Подключаем внешнюю таблицу стилей -->
+    <script src="~/js/site.js">
+
+    </script> <!-- Подключаем сценарии -->
+</head>
+<body>
+    <header class="HeaderFull">
+        <div class="HeaderMain">
+            <ol class="OlHeader">
+            <li class="ColumHeader">
+                Главная страница 
+            </li>
+            <li class="ColumHeader">
+                    <a class="AHref" href="@Url.Content("~/Home/ChatGPT")">о чате gpt </a>
+                </li>
+            </ol>
+            <div class="RegDiv"><p><a class="AHref" href="@Url.Content("~/Home/RegistrLogin")">Регистрация  / Войти</a></p></div>
+        </div>
+    </header>
+    <main class="Main">
+        <div class="MainBorder_mainNewMessage">
+        <div class="MainNewMessage">
+                <form action="~/Home/OnCreateMessage" method="post">
+            <button class="SendMessage">Новый чат</button>
+            </form>
+        </div>
+        </div>
+        <div class="MainMessage">
+            <div class="MessageBot">
+                <div class="MessageBotText" >
+                    
+                    @if(Model!=null)
+                    {
+                        @foreach (var i in Model)
+                        {
+                            if (i.Role == "user")
+                            {
+                                <div class="MessageClient">
+                                    @i.Content
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="MessageBotGpt">
+                                    @i.Content
+                                </div>
+                            }
+                        }
+                    }
+                    
+                </div>
+            </div>
+            <form action="~/Home/OnPost" method="post">
+                <div class="MessageYou">
+         
+            <div id="chatbox"></div>
+           
+            <input type="text" id="userInput" name="user" placeholder="Введите сообщение..." />
+                    <input type="submit" value="Отправить" AutoPostback="false" OnClientClick="return false;" />
+            </div>
+            </form>
+        </div>
+    </main>
+    <footer class="Footer">
+
+    </footer>
+</body>
+</html>
